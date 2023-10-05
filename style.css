@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+}
+
+:root {
+    --background-color: #ddd;
+    --background-color-form: #999999;
+    --background-color-btn: linear-gradient(to right, #444, #fff);
+    --background-color-btn-hover: #fff;
+}
+
+.loginContainer {
+    height: 100vh;
+    width: 100%;
+    background: var(--background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    height: 90%;
+    width: 90%;
+    background: var(--background-color-form);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.formContainer .form {
+    /* background: #292970; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 300px; */
+    width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.form .enterSpace {
+    display: flex;
+    flex-direction: column;
+}
+
+.enterSpace label {
+    margin: 0px 0px 5px;
+}
+
+.enterSpace input {
+    width: 100%;
+    padding: 5px;
+}
+
+.col {
+    margin: 10px 0px;
+    /* background-color: chartreuse; */
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* background-color: chartreuse; */
+}
+
+.btn {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background: var(--background-color-btn);
+}
+
+.btn:hover {
+    background: var(--background-color-btn-hover);
+}
+
+
+
+@media(max-width:768px) {
+    .formContainer .form {
+        width: 70%;
+    }
+}
+
+@media(max-width:460px) {
+    .formContainer .form {
+        width: 90%;
+    }
+}
+
+@media(max-width:375px) {
+    .formContainer {
+        margin: 3px;
+        padding: 10px;
+    }
+
+    .formContainer .form {
+        width: 97%;
+    }
+}
+
+@media(max-width:375px) {
+    .formContainer {
+        padding: 3px;
+    }
+}
